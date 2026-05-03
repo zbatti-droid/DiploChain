@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  color: #1a1a2e;
+  direction: ltr;
+}
+
+/* NAVBAR */
+.navbar {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.5px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: #85B7EB;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(133,183,235,0.3);
+  transition: all 0.2s;
+}
+
+.navbar-links a:hover {
+  background: rgba(133,183,235,0.2);
+  border-color: #85B7EB;
+}
+
+.btn-logout {
+  background: linear-gradient(135deg, #e74c3c, #c0392b) !important;
+  color: white !important;
+  border: none !important;
+  padding: 8px 18px !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  width: auto !important;
+  transition: all 0.2s !important;
+}
+
+.btn-logout:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(231,76,60,0.4) !important;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 580px;
+  margin: 2.5rem auto;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.4);
+}
+
+/* LOGIN */
+.login-container {
+  max-width: 440px;
+  margin: 4rem auto;
+  padding: 3rem 2.5rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.login-logo {
+  font-size: 56px;
+  margin-bottom: 1rem;
+}
+
+.login-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* HEADINGS */
+h2 {
+  margin-bottom: 1.5rem;
+  color: #185FA5;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f4f8;
+}
+
+/* INPUTS */
+input, select {
+  width: 100%;
+  padding: 13px 16px;
+  margin-bottom: 1rem;
+  border: 2px solid #e8ecf0;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.2s;
+  outline: none;
+  background: #fafbfc;
+}
+
+input:focus, select:focus {
+  border-color: #185FA5;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(24,95,165,0.1);
+}
+
+/* BUTTONS */
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #185FA5, #0c447c);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.3px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(24,95,165,0.4);
+}
+
+button:disabled {
+  background: #ccc;
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* RESULTS */
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: pre-line;
+}
+
+.success {
+  background: #f0fae8;
+  color: #2d6a0a;
+  border-left: 4px solid #3B6D11;
+}
+
+.error {
+  background: #fef0f0;
+  color: #8b1a1a;
+  border-left: 4px solid #e74c3c;
+}
+
+/* DIPLOMA CARD */
+.diploma-card {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f0f7ff, #e6f1fb);
+  border-radius: 14px;
+  border: 1px solid #b8d4f0;
+}
+
+.diploma-card-title {
+  font-weight: 700;
+  color: #185FA5;
+  font-size: 15px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.diploma-code {
+  font-size: 11px;
+  color: #0c447c;
+  word-break: break-all;
+  background: white;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #b8d4f0;
+  margin-bottom: 1rem;
+  font-family: monospace;
+}
+
+.btn-copy {
+  width: auto !important;
+  padding: 8px 18px !important;
+  font-size: 13px !important;
+  background: white !important;
+  color: #185FA5 !important;
+  border: 2px solid #185FA5 !important;
+  border-radius: 8px !important;
+  margin-bottom: 1rem !important;
+  font-weight: 600 !important;
+}
+
+.btn-copy:hover {
+  background: #185FA5 !important;
+  color: white !important;
+  transform: none !important;
+}
+
+/* ROLES HINT */
+.roles-hint {
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #666;
+  text-align: left;
+  border: 1px solid #e8ecf0;
+}
+
+.roles-hint p {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* VALID DIPLOMA */
+.valid-diploma {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f0fae8, #e8f5e0);
+  border-radius: 14px;
+  border-left: 5px solid #3B6D11;
+}
+
+.valid-diploma h3 {
+  color: #2d6a0a;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+.valid-diploma p {
+  color: #3B6D11;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* PDF UPLOAD */
+.pdf-upload {
+  border: 2px dashed #b8d4f0;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: #fafbfc;
+  transition: all 0.2s;
+}
+
+.pdf-upload:hover {
+  border-color: #185FA5;
+  background: #f0f7ff;
+}
