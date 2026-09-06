@@ -5,15 +5,29 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+#root {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   min-height: 100vh;
-  color: #1a1a2e;
   direction: ltr;
 }
 
-/* NAVBAR */
-.navbar {
+/* ===== STYLES POUR LES PAGES INTERNES (Register, Verify, Student) ===== */
+
+/* BACKGROUND - uniquement pour les pages internes */
+.app-page {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  color: #1a1a2e;
+}
+
+/* NAVBAR interne */
+.navbar-internal {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -82,38 +96,8 @@ body {
   box-shadow: 0 25px 70px rgba(0,0,0,0.4);
 }
 
-/* LOGIN */
-.login-container {
-  max-width: 440px;
-  margin: 4rem auto;
-  padding: 3rem 2.5rem;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 25px 70px rgba(0,0,0,0.4);
-  text-align: center;
-}
-
-.login-logo {
-  font-size: 56px;
-  margin-bottom: 1rem;
-}
-
-.login-title {
-  font-size: 26px;
-  font-weight: 800;
-  color: #1a1a2e;
-  margin-bottom: 0.5rem;
-}
-
-.login-subtitle {
-  font-size: 13px;
-  color: #999;
-  margin-bottom: 2rem;
-  line-height: 1.5;
-}
-
-/* HEADINGS */
-h2 {
+/* HEADINGS - فقط داخل container */
+.container h2 {
   margin-bottom: 1.5rem;
   color: #185FA5;
   font-size: 20px;
@@ -125,8 +109,9 @@ h2 {
   border-bottom: 2px solid #f0f4f8;
 }
 
-/* INPUTS */
-input, select {
+/* INPUTS - فقط داخل container */
+.container input,
+.container select {
   width: 100%;
   padding: 13px 16px;
   margin-bottom: 1rem;
@@ -138,14 +123,15 @@ input, select {
   background: #fafbfc;
 }
 
-input:focus, select:focus {
+.container input:focus,
+.container select:focus {
   border-color: #185FA5;
   background: white;
   box-shadow: 0 0 0 3px rgba(24,95,165,0.1);
 }
 
-/* BUTTONS */
-button {
+/* BUTTONS - فقط داخل container */
+.container button {
   width: 100%;
   padding: 14px;
   background: linear-gradient(135deg, #185FA5, #0c447c);
@@ -159,12 +145,12 @@ button {
   letter-spacing: 0.3px;
 }
 
-button:hover {
+.container button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(24,95,165,0.4);
 }
 
-button:disabled {
+.container button:disabled {
   background: #ccc;
   transform: none;
   box-shadow: none;
